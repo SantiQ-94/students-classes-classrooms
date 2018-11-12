@@ -58,4 +58,9 @@ if __name__ == "__main__":
         
     print(StudentFoundList(student_list, classroom_list))
 
-    
+    john_student2 = Student(name='John Wilson', latitude= 34.069149, longitude=-118.442639 ) # engineering
+    jane_student2 = Student(name='Jane Graham', latitude= 34.069601, longitude=-118.441862 ) # geology
+    pam_student2 = Student(name='Pam Bam', latitude=34.071513, longitude=-118.441181 ) # humanities
+
+    student_list2 = [john_student2, jane_student2, pam_student2]
+    print(StudentFoundList(student_list2, classroom_list))
