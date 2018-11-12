@@ -18,7 +18,9 @@ Django allows us to implement a MVC design pattern efficiently, by defining a mo
 <p>
  The second problem is more simple; it is possible to find the distance between two points on a plane by appliying the following mathematical function:
                             
-                            D = sqrt((x2 - x1)^2 + (y2 - y1)^2)
+                                          D = sqrt((x2 - x1)^2 + (y2 - y1)^2)
+                                        
+                                           *where sqrt stands for Square Root
 
 The implementation of a solution, is quite simple, given that the problem description is very specific on its own; everything that was required for this problem can be found on the standard library of Python.
 </p>
