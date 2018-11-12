@@ -16,11 +16,16 @@ Django allows us to implement a MVC design pattern efficiently, by defining a mo
 <h3>Problem 2</h3>
 
 <p>
- The second problem is more simple; it is possible to find the distance between two points on a plane by appliying the following mathematical function:
+ The second problem is more simple; it is possible to find the distance between two coordinates by appliying the following distance formula, extracted from <a href="https://www.movable-type.co.uk/scripts/latlong.html">Movable Type Scrpits page </a>:
                             
-                                          D = sqrt((x2 - x1)^2 + (y2 - y1)^2)
-                                        
-                                           *where sqrt stands for Square Root
+                            Haversine
+                            formula: 	
+                                      a = sin²(Δφ/2) + cos φ1 ⋅ cos φ2 ⋅ sin²(Δλ/2)
+                                      c = 2 ⋅ atan2( √a, √(1−a) )
+                                      d = R ⋅ c
 
-The implementation of a solution, is quite simple, given that the problem description is very specific on its own; everything that was required for this problem can be found on the standard library of Python.
+                            where 	φ is latitude, λ is longitude, R is earth’s radius (mean radius = 6,371km);
+                            note that angles need to be in radians to pass to trig functions!
+                                          
+The implementation of a solution, is quite simple, given that the problem description is very specific on its own; everything that was required for this problem can be found in the <strong>math</strong> library of Python.
 </p>
