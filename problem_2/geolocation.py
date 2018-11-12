@@ -15,8 +15,18 @@ class Classroom:
         self.longitude = longitude
 
 
-def distance(xA, yA, xB, yB):
-    return math.sqrt(((xB - xA)**2) + ((yB - yA)**2))
+def distance(latA, lonA, latB, lonB):
+    EARTH_RADIUS = 6371000
+
+    deltaLat = math.radians(latB - latA)
+    deltaLon = math.radians(lonB - lonA)
+    latARadians = math.radians(latA)
+    latBRadians = math.radians(latB)
+    #a holds the value of the Haversine formula
+    a = math.sin(deltaLat / 2) * math.sin(deltaLat / 2) + math.sin(deltaLon / 2) * math.sin(deltaLon / 2) * math.cos(latARadians) * math.cos(latBRadians)
+    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+    distance = EARTH_RADIUS * c
+    return distance
 
 def StudentFoundList(StudentList=[], ClassroomList=[]):
     return_set = []
@@ -24,7 +34,7 @@ def StudentFoundList(StudentList=[], ClassroomList=[]):
     for student in StudentList:
         for classroom in ClassroomList:
             distance_to_classroom = distance(student.latitude, student.longitude, classroom.latitude, classroom.longitude)
-            if distance_to_classroom <= 0.002:
+            if distance_to_classroom <= 20:
                 return_set.append({'latitude': student.latitude, 'name': student.name, 'longitude': student.longitude})
                 break
 
