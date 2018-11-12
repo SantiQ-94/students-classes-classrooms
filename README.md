@@ -19,8 +19,8 @@ Django allows us to implement a MVC design pattern efficiently, by defining a mo
  The second problem is more simple; it is possible to find the distance between two coordinates by appliying the following distance formula, extracted from <a href="https://www.movable-type.co.uk/scripts/latlong.html">Movable Type Scrpits page </a>:
                             
                             Haversine
-                            formula: 	a = sin²(Δφ/2) + cos φ1 ⋅ cos φ2 ⋅ sin²(Δλ/2)
-
+                            formula: 	
+                                      a = sin²(Δφ/2) + cos φ1 ⋅ cos φ2 ⋅ sin²(Δλ/2)
                                       c = 2 ⋅ atan2( √a, √(1−a) )
                                       d = R ⋅ c
 
