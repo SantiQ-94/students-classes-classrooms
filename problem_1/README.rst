@@ -31,9 +31,17 @@ After this, it's necessary to install all the dependencies for the app.
 
 Running the application
 =======================
+Before running the application for the first time it's necessary to setup the database
+to do so, type the following command
+
+    $(venv) python manage.py migrate
+    
+
 To launch the application you just have to issue the next command
 
     $(venv) python manage.py runserver
+
+
 
 
 Testing
@@ -57,6 +65,7 @@ On the current version is necessary to add
 Test Cases
 ----------
 For Students
+
 - Create a Student with incomplete information.
 - Create two different Students with the exact same information (first_name, last_name).
 - Update the information of a determined Student.
@@ -67,6 +76,7 @@ For Students
 - Get a list of all the Students that are enrolled to a particular Class.
 
 For Classes
+
 - Create a Class with incomplete information.
 - Create two different Classes with the exact same code.
 - Update the information of a determined Class.
