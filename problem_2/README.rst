@@ -7,7 +7,7 @@ Description
 This problem consists on finding out if any **Student** from a collection of students, 
 is located within a **Classroom** geographical space.
 
-Every *Student* has a name and a locations described as coordinates, the same applies to every
+Every *Student* has a name and a location (described as a pair of coordinates), the same applies to every
 *Classroom*.
 
 Assumptions
@@ -32,3 +32,6 @@ This project requires no further actions to work.
 
 Testing
 =======
+Position yourself inside the *geolocation* directory and run the following command
+
+    $ python3 -m unittest test/test_geolocation.py
