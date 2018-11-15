@@ -35,7 +35,7 @@ Before running the application for the first time it's necessary to setup the da
 to do so, type the following command
 
     $(venv) python manage.py migrate
-    
+
 
 To launch the application you just have to issue the next command
 
@@ -64,7 +64,7 @@ On the current version is necessary to add
 
 Test Cases
 ----------
-For Students
+For **Students** model:
 
 - Create a Student with incomplete information.
 - Create two different Students with the exact same information (first_name, last_name).
@@ -75,7 +75,8 @@ For Students
 - Get a list of all the existing Students.
 - Get a list of all the Students that are enrolled to a particular Class.
 
-For Classes
+
+For **Classes** model:
 
 - Create a Class with incomplete information.
 - Create two different Classes with the exact same code.
