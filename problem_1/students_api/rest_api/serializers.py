@@ -1,6 +1,11 @@
+"""
+@author  : Santiago Quiroga Turdera
+@version : 1.0
+"""
+
+
 from rest_framework import serializers
 from .models import Class, Student 
-
 
 
 class ClassSerializer(serializers.HyperlinkedModelSerializer):

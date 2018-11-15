@@ -1,4 +1,9 @@
 """
+@author  : Santiago Quiroga Turdera
+@version : 1.0
+
+
+
 WSGI config for students_api project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.

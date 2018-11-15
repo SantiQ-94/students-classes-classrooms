@@ -1,3 +1,9 @@
+"""
+@author  : Santiago Quiroga Turdera
+@version : 1.0
+"""
+
+
 from django.apps import AppConfig
 
 
